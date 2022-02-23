@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.pageLogo{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 250px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.pageWrapper{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  background-color: #eff6ff;
+  padding-top: 50px;
+  font-family: roboto, "Helvetica Neue", sans-serif;
 }
-
-.App-link {
-  color: #61dafb;
+.btnWrapper{
+  background-color: #d97706;
+  color: #FFFFFF;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.formInp{
+  height: 35px;
+  padding-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: none;
+}
+.pageHdr{
+  color: #1e40af;
+  text-align: center;
+  font-size: 36px;
+}
+.pageDesc{
+  color: #1e40af;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 24px;
+}
+.formWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardWrapper{
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #1e40af;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 50%;
+}
+.cardWrapper:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition:  box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+.cardImgWrapper{
+  display: flex;
+  align-items: center;
+  grid-gap: 10px;
+}
+.cardHdr{
+  color: #1e40af;;
+  font-size: 24px;
+  font-weight: bold;
+}
+.cardDesc{
+  color: #1e40af;
+  font-size: 18px;
+  line-height: 25px;
+}
+.cardDescHighlight {
+  color: #3cb371;
 }
